@@ -20,6 +20,9 @@ $(document).ready(function(){
   
     if (storedPlans !== null) {
       planTextArr = storedPlans;
+    } else {
+        
+        planTextArr = new Array(9);
     }
   
     let $plannerDiv = $('#plannerContainer');
