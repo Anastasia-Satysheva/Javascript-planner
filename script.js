@@ -37,8 +37,8 @@ $(document).ready(function(){
       $rowDiv.addClass('plannerRow');
       $rowDiv.attr('hour-index',hour);
     
-      let $col2TimeDiv = $('<div>');
-      $col2TimeDiv.addClass('col-md-2');
+      let $col2Div = $('<div>');
+      $col2Div.addClass('col-md-2');
     
       const $timeBoxSpn = $('<span>');
       $timeBoxSpn.attr('class','timeBox');
@@ -55,8 +55,8 @@ $(document).ready(function(){
       
       $timeBoxSpn.text(`${displayHour} ${ampm}`);
   
-      $rowDiv.append($col2TimeDiv);
-      $col2TimeDiv.append($timeBoxSpn);
+      $rowDiv.append($col2Div);
+      $col2Div.append($timeBoxSpn);
   
       let $dailyPlanSpn = $('<input>');
   
@@ -67,22 +67,22 @@ $(document).ready(function(){
   
       $dailyPlanSpn.val( planTextArr[index] );
       
-      let $col9IptDiv = $('<div>');
-      $col9IptDiv.addClass('col-md-9');
+      let $col9Div = $('<div>');
+      $col9Div.addClass('col-md-9');
   
-      $rowDiv.append($col9IptDiv);
-      $col9IptDiv.append($dailyPlanSpn);
+      $rowDiv.append($col9Div);
+      $col9Div.append($dailyPlanSpn);
     
-      let $col1SaveDiv = $('<div>');
-      $col1SaveDiv.addClass('col-md-1');
+      let $col1Div = $('<div>');
+      $col1Div.addClass('col-md-1');
   
       let $saveBtn = $('<i>');
       $saveBtn.attr('id',`saveid-${index}`);
       $saveBtn.attr('save-id',index);
       $saveBtn.attr('class',"fas fa-save saveIcon");
       
-      $rowDiv.append($col1SaveDiv);
-      $col1SaveDiv.append($saveBtn);
+      $rowDiv.append($col1Div);
+      $col1Div.append($saveBtn);
 
       updateRowColor($rowDiv, hour);
       
