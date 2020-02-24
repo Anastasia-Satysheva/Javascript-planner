@@ -1,6 +1,8 @@
 ## Welcome to Javascript-planner Website!
 This daily planner is a nice tool you can use to change your life. Planning will take a couple of minutes because you don't need to fill in some extra info.
 
+### Check it out! Link: https://anastasia-satysheva.github.io/Javascript-planner/
+
 ### Features
 It's a simple calendar application that allows the user to save events for each hour of the day. This app runs in the browser and feature dynamically updated HTML and CSS powered by jQuery.
 
